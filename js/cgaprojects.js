@@ -17,7 +17,7 @@
 				//layer.setStyle(highlightStyle);
 				var latlng = layer.getBounds().getCenter();
 				
-				var popupContent = "<b>Name: </b>" + feature.properties.Name + "<br /><b>Description: </b>" + feature.properties.Description; 
+				var popupContent = "<b>Name: </b>" + feature.properties.Name + "<br /><b>Description: </b>" + feature.properties.Description + "<br /><b>URL: </b>" + feature.properties.String_Value_2; 
 				var popup = new L.Popup();																				
 				popup.setLatLng(latlng);
 				popup.setContent(popupContent);
